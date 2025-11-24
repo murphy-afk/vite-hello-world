@@ -7,9 +7,21 @@ function App() {
 }
 
 function Paragraph() {
-  return(
+  return (
     <p>This is a paragraph</p>
   )
 }
+function Button() {
+  return (
+    <button>Button</button>
+  )
+}
 
-export { App, Paragraph }
+const Greet = (name) => {
+  name = "You";
+  return (
+    console.log(`Hello ${name}`)
+  )
+}
+
+export { App, Paragraph, Button, Greet }
