@@ -81,6 +81,7 @@ img {
   height: 150px;
   width: 150px;
   margin: 0 auto;
+  border-radius: 5px;
 }
 
 img:hover {
