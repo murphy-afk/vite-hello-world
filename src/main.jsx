@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { App, Paragraph, Button, Greet } from './App.jsx'
+import { Paragraph, Button, Greet } from './App.jsx'
 import Plasma from './Plasma';
 
 
@@ -19,10 +19,10 @@ createRoot(document.getElementById('root')).render(
       />
 {/***********************************/}
     <div>
-    <App />
+    {/* <App /> */}
+    <Greet name='You' />
     <Paragraph />
     <Button />
-    <Greet name='You' />
     </div>
   </StrictMode>,
 )
