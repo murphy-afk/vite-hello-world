@@ -1,27 +1,16 @@
 import './App.css'
 
-function App() {
+const App = () => <h1>Hello world</h1>;
+
+const Paragraph = () => <p>This is a paragraph</p>;
+
+const Button = () => {
+  const onClick = () => console.log('It works');
   return (
-    <h1>Hello world</h1>
+    <button onClick={onClick}>Button</button>
   )
 }
 
-function Paragraph() {
-  return (
-    <p>This is a paragraph</p>
-  )
-}
-function Button() {
-  return (
-    <button>Button</button>
-  )
-}
-
-const Greet = (name) => {
-  name = "You";
-  return (
-    console.log(`Hello ${name}`)
-  )
-}
+const Greet = ({ name }) => <p>Hello {name}</p>
 
 export { App, Paragraph, Button, Greet }
