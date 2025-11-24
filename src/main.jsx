@@ -25,10 +25,10 @@ createRoot(document.getElementById('root')).render(
     <Button btnName='This is a button' />
     <Paragraph content="and this is a row of random photos" className="second-paragraph" />
     <div className='bottom-section'>
-    <Image id = "32" />
-    <Image id = "43" />
-    <Image id = "54"  />
-    <Image id = "14" />
+      <Image id="233" />
+      <Image id="122" />
+      <Image id="54" />
+      <Image id="35" />
     </div>
   </StrictMode>,
 )

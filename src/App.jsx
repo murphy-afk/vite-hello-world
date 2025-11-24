@@ -10,6 +10,7 @@ const Button = ({ btnName }) => {
   const onClick = () => {
     if (count > 10) {
       console.log("STOP CLICKING THE BUTTON!!!!");
+      count = 1;
     }
     else {
       console.log("Button works", count);
@@ -23,8 +24,10 @@ const Button = ({ btnName }) => {
 
 const Image = ({ id }) => {
   const url = `https://picsum.photos/id/${id}/200/300`;
+  const log = (e) => console.log(`photo url: ${e.target.src}`);
+
   return (
-    <img src={url} alt="pic" />
+    <img onClick={log} src={url} alt="pic" />
   )
 }
 export { Paragraph, Button, Greet, Image }
