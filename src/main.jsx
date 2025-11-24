@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { Paragraph, Button, Greet } from './App.jsx'
+import { Paragraph, Button, Greet, Image } from './App.jsx'
 import Plasma from './Plasma';
 
 
@@ -21,7 +21,14 @@ createRoot(document.getElementById('root')).render(
     {/* <App /> */}
     <Greet name='You' />
     <Paragraph content="Look at the cool backgorund i found on ReactBits" />
-    <Paragraph content="Less cool but there is also a button" className="second-paragraph"/>
+    <Paragraph content="Less cool but there is also a button" className="second-paragraph" />
     <Button btnName='This is a button' />
+    <Paragraph content="and this is a row of random photos" className="second-paragraph" />
+    <div className='bottom-section'>
+    <Image id='https://picsum.photos/id/15/200/300' />
+    <Image id='https://picsum.photos/id/16/200/300'  />
+    <Image id='https://picsum.photos/id/24/200/300'  />
+    <Image id='https://picsum.photos/id/189/200/300' />
+    </div>
   </StrictMode>,
 )

@@ -75,3 +75,19 @@ button:focus-visible {
 .second-paragraph {
   font-size: 0.7rem;
 }
+
+img {
+  display: block;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+.bottom-section {
+  display: flex;
+  gap: 1em;
+}
