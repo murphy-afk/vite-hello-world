@@ -20,7 +20,8 @@ createRoot(document.getElementById('root')).render(
     {/***********************************/}
     {/* <App /> */}
     <Greet name='You' />
-    <Paragraph />
+    <Paragraph content="Look at the cool backgorund i found on ReactBits" />
+    <Paragraph content="Less cool but there is also a button" className="second-paragraph"/>
     <Button btnName='This is a button' />
   </StrictMode>,
 )
