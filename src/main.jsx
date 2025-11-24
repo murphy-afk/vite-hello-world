@@ -18,11 +18,9 @@ createRoot(document.getElementById('root')).render(
     mouseInteractive={false}
       />
 {/***********************************/}
-    <div>
     {/* <App /> */}
     <Greet name='You' />
     <Paragraph />
     <Button />
-    </div>
   </StrictMode>,
 )

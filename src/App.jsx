@@ -7,15 +7,13 @@ const Paragraph = () => <p>This is a paragraph</p>;
 const Button = () => {
   const onClick = () => {
     console.log('It works');
-    document.createElement('p')
   }
   return (
     <button onClick={onClick}>This is a button</button>
   )
-}
+};
 
-const Greet = ({ name }) => <h1>Hello {name}</h1>
-
+const Greet = ({ name }) => <h1>Hello {name}</h1>;
 
 
 export { Paragraph, Button, Greet }
