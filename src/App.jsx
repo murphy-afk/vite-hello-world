@@ -5,7 +5,7 @@ const Greet = ({ name }) => <h1>Hello {name}</h1>;
 
 const Paragraph = () => <p>This is a paragraph</p>;
 
-const Button = () => {
+const Button = ({ btnName }) => {
   let count = 1;
   const onClick = () => {
     if (count > 10) {
@@ -17,7 +17,7 @@ const Button = () => {
     }
   }
   return (
-    <button onClick={onClick}>This is a button</button>
+    <button onClick={onClick}>{btnName}</button>
   )
 };
 
