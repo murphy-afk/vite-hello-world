@@ -22,8 +22,9 @@ const Button = ({ btnName }) => {
 };
 
 const Image = ({ id }) => {
+  const url = `https://picsum.photos/id/${id}/200/300`;
   return (
-    <img src={id} alt="pic" />
+    <img src={url} alt="pic" />
   )
 }
 export { Paragraph, Button, Greet, Image }
